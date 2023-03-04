@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles'
 import { Button, TextField, List, ListItem, ListItemText, ListItemSecondaryAction, IconButton } from '@mui/material'
 import { Delete } from '@mui/icons-material'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
+import Link from '@/components/Link'
 
 type Todo = {
   id: number
@@ -38,6 +39,9 @@ export default function Home() {
   return (
     <Root>
       <h1>Todo App</h1>
+      <Link href="/dashboard" color="secondary">
+          Go to the dashboard page
+      </Link>
       <Input
         label="Add Todo"
         variant="outlined"
